@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="5b369687-2280-42b0-910d-a76f83eca21c" data-blockingmode="auto" type="text/javascript"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Srđan Cvetković"> <!-- https://srkitech.github.io/ -->
+    <title>PosKalkus - Kalkulator pdv-a, rata i cena</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154971823-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-154971823-1');
+    </script>
+
+    <!-- Bootstrap / jQuery / Popper / Font / CSS / JS -->
+    <link media="all" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script defer type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script defer type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link media="all" rel="stylesheet" type="text/css" href="https://srkitech.github.io/css/style.min.css" />
+    <script defer type="text/javascript" src="https://srkitech.github.io/script/poskalkus.min.js"></script>
+
+    <!-- For Google -->
+    <meta name="description" content="PosKalkus - Kalkulator pdv-a, rata i cena online za pripomoć POS terminalu u maloprodaji.">
+    <meta name="keywords" content="PosKalkus, izračunajte, kalkulator, cena, maloprodajna, nabavna, porez, osnova, ni, naslog, za, ispravku, obrazac, maloprodaju, pos, kalkus, pdv,
+    maloprodajna cena, nabavna cena, pdv kalkulator, kalkulator poreza, porez i osnova, nalog za ispravku, ni obrazac, izračunajte porez, formirajte cenu, ulazni pdv, izlazni pdv,
+    srki, tech, srkitech, srkitech.github.io, srđan, cvetković, srdjan, cvetkovic, trgovinski, tehničar, trade, tehnician, 
+    srđan cvetković, srdjan cvetkovic, trgovinski tehničar, trade tehnician, srđan cvetković trgovinski tehničar, srdjan cvetkovic trade technician">
+
+    <!-- For Facebook / LinkedIn -->
+    <meta property="og:title" content="PosKalkus - Kalkulator pdv-a, rata i cena"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="PosKalkus"/>
+    <meta property="og:url" content="https://srkitech.github.io/poskalkus/"/>
+    <meta property="og:description" content="PosKalkus - Kalkulator pdv-a, rata i cena online za pripomoć POS terminalu u maloprodaji."/>
+    <meta property="og:image" content="https://srkitech.github.io/poskalkus/images/poskalkus-pdv-kalkulator-rata.jpg">
+    <meta property="og:image:width" content= "1200" />
+    <meta property="og:image:height" content= "630" />
+
+    <!-- For Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="PosKalkus - Kalkulator pdv-a, rata i cena"/>
+    <meta name="twitter:description" content="PosKalkus - Kalkulator pdv-a, rata i cena online za pripomoć POS terminalu u maloprodaji." />
+    <meta name="twitter:image" content="https://srkitech.github.io/poskalkus/images/poskalkus.jpg" />
+    <meta name="twitter:image:src" content="https://srkitech.github.io/poskalkus/images/poskalkus.jpg" />
+    <meta name="twitter:image:width" content= "512" />
+    <meta name="twitter:image:height" content= "512" />
+
+    <!-- Favicons https://realfavicongenerator.net/ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://srkitech.github.io/images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://srkitech.github.io/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://srkitech.github.io/images/icons/favicon-16x16.png">
+    <link rel="manifest" href="https://srkitech.github.io/images/icons/site.webmanifest">
+    <link rel="mask-icon" href="https://srkitech.github.io/images/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-TileImage" content="https://srkitech.github.io/images/icons/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="shortcut icon" href="https://srkitech.github.io/favicon.ico" sizes="32x32"/>
+
+    <!-- Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "Srđan Cvetković",
+        "alternateName": "srkitech",
+        "url": "https://srkitech.github.io/",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Beograd",
+            "addressRegion": "Srbija",
+            "postalCode": "11000",
+            "addressCountry": "Srbija"
+          },
+        "image": "https://srkitech.github.io/images/srkitech.jpg",
+        "sameAs": [
+        "https://www.linkedin.com/in/srkitech/",
+        "https://www.instagram.com/srkitech/",
+        "https://github.com/srkitech"
+        ],
+        "jobTitle": "Trgovinski Tehničar"  
+    }
+    </script>
+</head>
+<body>
+
+<!-- PAGE -->
+<div class="container page-content">
+<div class="row" role="main">
+
+    <!-- Navigacija -->
+    <div class="col-sm-12 NoP">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <!-- Brand -->
+            <h1><a class="navbar-brand" title="Srđan Cvetković Trgovinski Tehničar" href="https://srkitech.github.io">Srđan Cvetković Trgovinski Tehničar</a></h1>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                <a class="nav-link" href="https://srkitech.github.io/latinocyr/" title="LatinoCyr - Latinica u Ćirilicu online">LatinoCyr</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="https://srkitech.github.io/poskalkus/" title="PosKalkus - Kalkulator pdv-a, rata i cena">PosKalkus</a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Informacije -->
+    <div class="col-sm-6 wrapHeader">
+        <img class="MyPhoto" alt="PosKalkus - Kalkulator pdv-a, rata i cena" src="images/poskalkus.jpg" width="200" height="200">
+        <img class="MyLogo" alt="PosKalkus" src="images/LogoTXT.png" width="200" height="60">
+
+        <div class="wrapSocial">
+            <div class="language">
+                <a class="portfolio" href="https://srkitech.github.io/" title="srkitech srdjan cvetkovic"></a>
+                <a class="dropbox" href="https://db.tt/qnUdJ4lblM" target="_blank" rel="nofollow" title="join dropbox"></a> 
+            </div>
+            <ul class="MySocial">
+                <li><a rel="nofollow" href="https://www.instagram.com/srkitech/" target="_blank" title="SrkiTech Instagram"></a></li>
+                <li><a rel="nofollow" href="https://www.linkedin.com/in/srkitech/" target="_blank" title="SrkiTech LinkedIn"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <blockquote class="col-sm-6 bio_text">
+        <h2>PosKalkus - Kalkulator pdv-a, rata i cena online</h2>, za pripomoć <h2>POS terminalu u maloprodaji</h2>. 
+        <h2>Formirajte cenu, ratu, porez i osnovu za nalog za ispravku kao i za ostale funkcije u maloprodaji.</h2>
+    </blockquote>
+
+    <div class="col-sm-12 txtC">
+        ⬇️ <h3>PDV Kalkulator</h3> ⬇️
+    </div>
+
+    <div class="col-sm-12 marginTop txtC NoP">
+
+        <div class="col-md-3 button kontrole">
+            <label class="Mfix">Porez &#37;</label>
+            <input id="tax_prc" type="number" placeholder="Procenat">    
+        </div>
+
+        <div class="col-md-3 button kontrole">
+            <input onclick="osn2mpc()" id="osn_btn" type="button" value="Od Osnove">
+            <input id="osn_val" type="number" placeholder="Osnova">
+        </div>
+
+        <div class="col-md-3 button kontrole">
+            <label class="Mfix"><h4>PDV</h4> iznos</label>
+            <input id="tax_val" type="number" readonly>
+        </div>
+
+        <div class="col-md-3 button kontrole">
+            <input onclick="mpc2osn()" id="mpc_btn" type="button" value="od MPC">
+            <input id="mpc_val" type="number" placeholder="MPC">
+        </div>
+        
+    </div>
+
+    <div class="col-sm-12 marginTop txtC NoP">
+
+        <div class="col-sm-12 marginTop">
+            ⬇️ <h3>Kalkulator rata</h3> ⬇️
+        </div>
+
+        <div class="col-md-3 button kontrole">
+            <label class="Mfix"><h4>MPC</h4></label>
+            <input id="mpc_uk" type="number" placeholder="Prodajna cena">    
+        </div>
+
+        <div class="col-md-3 button kontrole">
+            <label class="Mfix"><h4>Broj rata</h4></label>
+            <input id="br_rata" type="number" value="1">    
+        </div>
+
+        <div class="col-md-3 button kontrole">
+            <label class="Mfix"><h4>Uvecanje</h4> &#37;</label>
+            <input id="uvp" type="number" value="0">    
+        </div>
+
+        <div class="col-md-3 button kontrole">
+            <input onclick="rata()" id="rata_btn" type="button" value="Izračunaj">
+            <input id="sr_vr" type="number" placeholder="Rata">
+        </div>
+        
+    </div>
+
+    <div class="col-md-12 marginTop NoP">
+        <div class="col-md-3 button2 kontrole">
+        <label class="Mfix"><h4>Ukupna cena</h4></label>
+        <input id="uk_vr" type="number" readonly>
+        </div>
+    </div>
+
+    <div class="col-sm-12 marginTop txtC NoP">
+
+        <div class="col-sm-12 marginTop">
+            ⬇️ <h3>Kalkulator cena</h3> ⬇️
+        </div>
+
+        <div class="col-md-3 button kontrole">
+            <label class="Mfix"><h4>Ulazni PDV</h4> &#37;</label>
+            <input id="pdv_in" type="number" placeholder="Procenat">    
+        </div>
+
+        <div class="col-md-3 button kontrole">
+            <label class="Mfix"><h4>Izlazni PDV</h4> &#37;</label>
+            <input id="pdv_out" type="number" placeholder="Procenat">    
+        </div>
+
+        <div class="col-md-3 button kontrole">
+            <label class="Mfix"><h4>R.U.C.</h4> &#37;</label>
+            <input id="ruc_ps" type="number" placeholder="Procenat">    
+        </div>
+
+        <div class="col-md-3 button kontrole">
+            <label class="Mfix"><h4>Nabavna cena</h4></label>
+            <input id="ncr" type="number" placeholder="RSD">    
+        </div>
+        
+    </div>
+
+    <div class="col-md-12 marginTop NoP">
+        <div class="col-md-3 button2 kontrole">
+        <input onclick="ncr2mpc()" id="fpc_btn" type="button" value="Formiraj Cenu">
+        </div>
+    </div>
+
+    <div class="col-sm-12 txtC f_btn NoP">
+
+        <div class="col-md-3 button kontrole">
+            <label class="Mfix"><h4>Ulazni PDV</h4></label>
+            <input id="ncr_pdv" type="number" readonly>    
+        </div>
+
+        <div class="col-md-3 button kontrole">
+            <label class="Mfix"><h4>Razlika U Ceni</h4></label>
+            <input id="ruc_mar" type="number" readonly>    
+        </div>
+
+        <div class="col-md-3 button kontrole">
+            <label class="Mfix"><h4>Izlazni PDV</h4></label>
+            <input id="pdv_mar" type="number" readonly>    
+        </div>
+
+        <div class="col-md-3 button kontrole">
+            <label class="Mfix"><h4>Prodajna cena</h4></label>
+            <input id="mpc_fin" type="number" readonly>    
+        </div>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div id="swap_footer" class="row footer">
+    <h3 class="author">
+        <a title="SrkiTech - Srđan Cvetković Trgovinski Tehničar" href="https://srkitech.github.io">Srđan Cvetković Trgovinski Tehničar</a>
+    </h3>
+</div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 txtC">
+            <a class="deklaracija" href="https://srkitech.github.io/deklaracija">Deklaracija o kolačićima</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
